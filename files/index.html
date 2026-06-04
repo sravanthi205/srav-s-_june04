@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Srav's Ice Cream Parlour – Serving Happiness in Every Scoop! Premium, fresh, handcrafted ice creams in a family-friendly environment." />
+  <meta name="keywords" content="ice cream, parlour, Srav's, desserts, flavors, scoops, family-friendly" />
+  <meta property="og:title" content="Srav's Ice Cream Parlour" />
+  <meta property="og:description" content="Serving Happiness in Every Scoop!" />
+  <title>Srav's Ice Cream Parlour 🍦</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&family=Sacramento&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+        <span class="brand-icon">🍦</span>
+        <span class="brand-text">Srav's</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <i class="bi bi-list"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-center gap-1">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Reviews</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item">
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+              <i class="bi bi-moon-fill" id="themeIcon"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="home" class="hero-section">
+    <div class="hero-bg"></div>
+    <div class="hero-blobs">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+    <div class="container hero-content">
+      <div class="row align-items-center min-vh-100">
+        <div class="col-lg-6" data-animate="fade-up">
+          <p class="hero-tagline">✨ Handcrafted with love</p>
+          <h1 class="hero-title">
+            Serving <span class="cursive">Happiness</span><br />in Every Scoop
+          </h1>
+          <p class="hero-subtitle">
+            Welcome to Srav's Ice Cream Parlour — where premium ingredients meet playful flavors in a warm, family-friendly space.
+          </p>
+          <div class="hero-actions">
+            <a href="#menu" class="btn-primary-custom">Explore Menu <i class="bi bi-arrow-right-short"></i></a>
+            <a href="#about" class="btn-ghost-custom">Our Story</a>
+          </div>
+          <div class="hero-badges">
+            <div class="badge-pill"><i class="bi bi-star-fill"></i> 4.9 Rating</div>
+            <div class="badge-pill"><i class="bi bi-people-fill"></i> 10K+ Happy Customers</div>
+            <div class="badge-pill"><i class="bi bi-emoji-smile-fill"></i> 30+ Flavors</div>
+          </div>
+        </div>
+        <div class="col-lg-6 hero-visual" data-animate="fade-left">
+          <div class="hero-cone-wrapper">
+            <div class="hero-cone">🍦</div>
+            <div class="float-chip chip-1">🍓</div>
+            <div class="float-chip chip-2">🍫</div>
+            <div class="float-chip chip-3">🥭</div>
+            <div class="float-chip chip-4">🍪</div>
+            <div class="hero-ring ring-1"></div>
+            <div class="hero-ring ring-2"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURES STRIP ===== -->
+  <section class="features-strip">
+    <div class="container">
+      <div class="row g-0">
+        <div class="col-6 col-md-3 feature-item" data-animate="fade-up">
+          <i class="bi bi-flower1"></i>
+          <span>Fresh Ingredients</span>
+        </div>
+        <div class="col-6 col-md-3 feature-item" data-animate="fade-up" data-delay="100">
+          <i class="bi bi-award-fill"></i>
+          <span>Premium Quality</span>
+        </div>
+        <div class="col-6 col-md-3 feature-item" data-animate="fade-up" data-delay="200">
+          <i class="bi bi-palette-fill"></i>
+          <span>30+ Flavors</span>
+        </div>
+        <div class="col-6 col-md-3 feature-item" data-animate="fade-up" data-delay="300">
+          <i class="bi bi-house-heart-fill"></i>
+          <span>Family Friendly</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section-pad">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5" data-animate="fade-right">
+          <div class="about-image-collage">
+            <div class="about-img-main">🍨</div>
+            <div class="about-img-accent accent-1">🍧</div>
+            <div class="about-img-accent accent-2">🍡</div>
+            <div class="about-img-accent accent-3">🧁</div>
+            <div class="about-years-badge">
+              <span class="years-num">15</span>
+              <span class="years-text">Years of<br/>Joy</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7" data-animate="fade-left">
+          <p class="section-overline">Our Story</p>
+          <h2 class="section-title">A Labor of Love,<br/><em>Churned Daily</em></h2>
+          <p class="section-body">
+            Born in 2009 from a small kitchen and a big dream, Srav's Ice Cream Parlour has grown into a beloved neighborhood destination. We believe the best ice cream comes from the best ingredients — sourced fresh, crafted with care, and served with a smile.
+          </p>
+          <p class="section-body">
+            Every scoop is a story. Whether you're celebrating a milestone or just cooling off on a sunny afternoon, we're here to make that moment sweeter.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-card" data-animate="fade-up">
+              <i class="bi bi-droplet-fill"></i>
+              <div>
+                <strong>100% Fresh</strong>
+                <p>Locally sourced dairy, fruits, and nuts with no artificial preservatives.</p>
+              </div>
+            </div>
+            <div class="highlight-card" data-animate="fade-up" data-delay="100">
+              <i class="bi bi-shield-check-fill"></i>
+              <div>
+                <strong>Premium Quality</strong>
+                <p>Stringent quality checks at every step of our artisanal process.</p>
+              </div>
+            </div>
+            <div class="highlight-card" data-animate="fade-up" data-delay="200">
+              <i class="bi bi-balloon-heart-fill"></i>
+              <div>
+                <strong>Family First</strong>
+                <p>A welcoming space designed for every age, with something for everyone.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURED SLIDER ===== -->
+  <section class="featured-slider-section">
+    <div class="container">
+      <p class="section-overline text-center">This Month's Stars</p>
+      <h2 class="section-title text-center mb-5">Featured <em>Specials</em></h2>
+      <div class="slider-wrapper" id="featuredSlider">
+        <div class="slider-track" id="sliderTrack">
+          <div class="slider-card">
+            <div class="slider-emoji">🌸</div>
+            <h4>Rose Petal Sundae</h4>
+            <p>Rose-infused cream, pistachios & edible petals</p>
+            <span class="slider-price">₹189</span>
+          </div>
+          <div class="slider-card">
+            <div class="slider-emoji">🌿</div>
+            <h4>Mint Choco Chip</h4>
+            <p>Cool fresh mint swirled with dark chocolate chips</p>
+            <span class="slider-price">₹149</span>
+          </div>
+          <div class="slider-card">
+            <div class="slider-emoji">🥥</div>
+            <h4>Coconut Dream</h4>
+            <p>Tropical coconut cream with toasted flakes</p>
+            <span class="slider-price">₹159</span>
+          </div>
+          <div class="slider-card">
+            <div class="slider-emoji">🍋</div>
+            <h4>Lemon Sherbet</h4>
+            <p>Zesty citrus sorbet, light and refreshing</p>
+            <span class="slider-price">₹129</span>
+          </div>
+          <div class="slider-card">
+            <div class="slider-emoji">🍇</div>
+            <h4>Grape Delight</h4>
+            <p>Bursting with real Concord grape flavors</p>
+            <span class="slider-price">₹139</span>
+          </div>
+        </div>
+        <button class="slider-btn prev-btn" id="prevSlide"><i class="bi bi-chevron-left"></i></button>
+        <button class="slider-btn next-btn" id="nextSlide"><i class="bi bi-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MENU ===== -->
+  <section id="menu" class="section-pad">
+    <div class="container">
+      <p class="section-overline text-center">What We Serve</p>
+      <h2 class="section-title text-center">Our <em>Signature</em> Menu</h2>
+      <!-- Filter Buttons -->
+      <div class="menu-filters" id="menuFilters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="classic">Classic</button>
+        <button class="filter-btn" data-filter="fruit">Fruit</button>
+        <button class="filter-btn" data-filter="indulgent">Indulgent</button>
+      </div>
+      <div class="row g-4" id="menuGrid">
+
+        <!-- Vanilla Delight -->
+        <div class="col-sm-6 col-lg-4 menu-item-col" data-category="classic" data-animate="fade-up">
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <span class="menu-emoji">🍦</span>
+              <div class="menu-tag">Classic</div>
+            </div>
+            <div class="menu-card-body">
+              <h5>Vanilla Delight</h5>
+              <p>Rich Madagascar vanilla bean ice cream, smooth and timeless.</p>
+              <div class="menu-footer">
+                <span class="menu-price">₹99</span>
+                <button class="order-btn" onclick="addToCart('Vanilla Delight', 99)">
+                  <i class="bi bi-bag-plus-fill"></i> Order
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chocolate Heaven -->
+        <div class="col-sm-6 col-lg-4 menu-item-col" data-category="indulgent" data-animate="fade-up" data-delay="100">
+          <div class="menu-card">
+            <div class="menu-card-img choco">
+              <span class="menu-emoji">🍫</span>
+              <div class="menu-tag indulgent-tag">Indulgent</div>
+            </div>
+            <div class="menu-card-body">
+              <h5>Chocolate Heaven</h5>
+              <p>Triple chocolate fudge with Belgian cocoa and a hot fudge swirl.</p>
+              <div class="menu-footer">
+                <span class="menu-price">₹129</span>
+                <button class="order-btn" onclick="addToCart('Chocolate Heaven', 129)">
+                  <i class="bi bi-bag-plus-fill"></i> Order
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Strawberry Bliss -->
+        <div class="col-sm-6 col-lg-4 menu-item-col" data-category="fruit" data-animate="fade-up" data-delay="200">
+          <div class="menu-card">
+            <div class="menu-card-img strawberry">
+              <span class="menu-emoji">🍓</span>
+              <div class="menu-tag fruit-tag">Fruit</div>
+            </div>
+            <div class="menu-card-body">
+              <h5>Strawberry Bliss</h5>
+              <p>Garden-fresh strawberries churned into a dreamy pink cream.</p>
+              <div class="menu-footer">
+                <span class="menu-price">₹109</span>
+                <button class="order-btn" onclick="addToCart('Strawberry Bliss', 109)">
+                  <i class="bi bi-bag-plus-fill"></i> Order
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mango Magic -->
+        <div class="col-sm-6 col-lg-4 menu-item-col" data-category="fruit" data-animate="fade-up" data-delay="300">
+          <div class="menu-card">
+            <div class="menu-card-img mango">
+              <span class="menu-emoji">🥭</span>
+              <div class="menu-tag fruit-tag">Fruit</div>
+            </div>
+            <div class="menu-card-body">
+              <h5>Mango Magic</h5>
+              <p>Alphonso mango pulp blended into a tropical, velvety scoop.</p>
+              <div class="menu-footer">
+                <span class="menu-price">₹119</span>
+                <button class="order-btn" onclick="addToCart('Mango Magic', 119)">
+                  <i class="bi bi-bag-plus-fill"></i> Order
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Butterscotch Crunch -->
+        <div class="col-sm-6 col-lg-4 menu-item-col" data-category="classic" data-animate="fade-up" data-delay="400">
+          <div class="menu-card">
+            <div class="menu-card-img butterscotch">
+              <span class="menu-emoji">✨</span>
+              <div class="menu-tag">Classic</div>
+            </div>
+            <div class="menu-card-body">
+              <h5>Butterscotch Crunch</h5>
+              <p>Silky butterscotch base with caramelized almond praline pieces.</p>
+              <div class="menu-footer">
+                <span class="menu-price">₹119</span>
+                <button class="order-btn" onclick="addToCart('Butterscotch Crunch', 119)">
+                  <i class="bi bi-bag-plus-fill"></i> Order
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Oreo Blast -->
+        <div class="col-sm-6 col-lg-4 menu-item-col" data-category="indulgent" data-animate="fade-up" data-delay="500">
+          <div class="menu-card">
+            <div class="menu-card-img oreo">
+              <span class="menu-emoji">🍪</span>
+              <div class="menu-tag indulgent-tag">Indulgent</div>
+            </div>
+            <div class="menu-card-body">
+              <h5>Oreo Blast</h5>
+              <p>Cookies & cream overload — crushed Oreos in rich vanilla cream.</p>
+              <div class="menu-footer">
+                <span class="menu-price">₹139</span>
+                <button class="order-btn" onclick="addToCart('Oreo Blast', 139)">
+                  <i class="bi bi-bag-plus-fill"></i> Order
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CART TOAST ===== -->
+  <div class="cart-toast" id="cartToast">
+    <i class="bi bi-bag-check-fill"></i>
+    <span id="cartToastMsg">Added to cart!</span>
+  </div>
+
+  <!-- ===== GALLERY ===== -->
+  <section id="gallery" class="section-pad gallery-section">
+    <div class="container">
+      <p class="section-overline text-center">Moments & Scoops</p>
+      <h2 class="section-title text-center">Our <em>Gallery</em></h2>
+      <div class="gallery-grid">
+        <div class="gallery-item gi-large" data-animate="fade-up"><span>🍨</span><div class="gallery-overlay"><p>Signature Sundae</p></div></div>
+        <div class="gallery-item" data-animate="fade-up" data-delay="100"><span>🍦</span><div class="gallery-overlay"><p>Classic Cones</p></div></div>
+        <div class="gallery-item" data-animate="fade-up" data-delay="150"><span>🍓</span><div class="gallery-overlay"><p>Berry Season</p></div></div>
+        <div class="gallery-item gi-tall" data-animate="fade-up" data-delay="200"><span>🧁</span><div class="gallery-overlay"><p>Cupcake Specials</p></div></div>
+        <div class="gallery-item" data-animate="fade-up" data-delay="250"><span>🥭</span><div class="gallery-overlay"><p>Mango Magic</p></div></div>
+        <div class="gallery-item" data-animate="fade-up" data-delay="300"><span>🍡</span><div class="gallery-overlay"><p>Mochi Moments</p></div></div>
+        <div class="gallery-item gi-wide" data-animate="fade-up" data-delay="350"><span>🎂</span><div class="gallery-overlay"><p>Ice Cream Cakes</p></div></div>
+        <div class="gallery-item" data-animate="fade-up" data-delay="400"><span>🍧</span><div class="gallery-overlay"><p>Shaved Ice</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section id="testimonials" class="section-pad testimonials-section">
+    <div class="container">
+      <p class="section-overline text-center">What They Say</p>
+      <h2 class="section-title text-center">Happy <em>Customers</em></h2>
+      <div class="row g-4 mt-2">
+
+        <div class="col-md-4" data-animate="fade-up">
+          <div class="testimonial-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"The Mango Magic is absolutely divine — it tastes like biting into a fresh Alphonso! My kids ask to come here every weekend now."</p>
+            <div class="reviewer">
+              <div class="reviewer-avatar">P</div>
+              <div>
+                <strong>Priya Sharma</strong>
+                <span>Regular Customer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4" data-animate="fade-up" data-delay="150">
+          <div class="testimonial-card featured-testimonial">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"Srav's is our family's happy place. The Butterscotch Crunch has the perfect balance of sweet and crunchy. Unmatched quality in the city!"</p>
+            <div class="reviewer">
+              <div class="reviewer-avatar">R</div>
+              <div>
+                <strong>Rahul Naidu</strong>
+                <span>Food Blogger</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4" data-animate="fade-up" data-delay="300">
+          <div class="testimonial-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"The ambiance is lovely, the staff is so warm, and the Oreo Blast is out of this world! We ordered a custom ice cream cake for our daughter's birthday — perfection!"</p>
+            <div class="reviewer">
+              <div class="reviewer-avatar">A</div>
+              <div>
+                <strong>Ananya Reddy</strong>
+                <span>Mom of Two</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NEWSLETTER ===== -->
+  <section class="newsletter-section">
+    <div class="container">
+      <div class="newsletter-box" data-animate="fade-up">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-6">
+            <p class="newsletter-overline">Stay Sweet</p>
+            <h3 class="newsletter-title">Get Exclusive Offers &<br/><em>New Flavor Alerts</em></h3>
+          </div>
+          <div class="col-lg-6">
+            <form class="newsletter-form" id="newsletterForm" novalidate>
+              <div class="input-wrapper">
+                <input type="email" placeholder="Enter your email address" id="newsletterEmail" required />
+                <button type="submit">Subscribe <i class="bi bi-send-fill"></i></button>
+              </div>
+              <p class="newsletter-note">No spam, just scoops. Unsubscribe anytime.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section-pad">
+    <div class="container">
+      <p class="section-overline text-center">Find Us</p>
+      <h2 class="section-title text-center">Come Say <em>Hello</em></h2>
+      <div class="row g-5 mt-2">
+        <div class="col-lg-5" data-animate="fade-right">
+          <div class="contact-info-card">
+            <h4 class="mb-4">Get In Touch</h4>
+            <div class="contact-detail">
+              <div class="contact-icon"><i class="bi bi-geo-alt-fill"></i></div>
+              <div>
+                <strong>Address</strong>
+                <p>42, Sweetness Lane, MG Road<br/>Vijayawada, Andhra Pradesh – 520001</p>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-icon"><i class="bi bi-telephone-fill"></i></div>
+              <div>
+                <strong>Phone</strong>
+                <p><a href="tel:+919876543210">+91 98765 43210</a></p>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-icon"><i class="bi bi-envelope-fill"></i></div>
+              <div>
+                <strong>Email</strong>
+                <p><a href="mailto:hello@sravsicecream.in">hello@sravsicecream.in</a></p>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-icon"><i class="bi bi-clock-fill"></i></div>
+              <div>
+                <strong>Hours</strong>
+                <p>Mon–Sun: 11:00 AM – 10:30 PM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7" data-animate="fade-left">
+          <div class="map-wrapper">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61384.09748680539!2d80.58780259139404!3d16.50622367069208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35efa11f74c647%3A0x67b95a2a47f36b60!2sVijayawada%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1717000000000!5m2!1sen!2sin"
+              width="100%" height="380" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade" title="Srav's Ice Cream Parlour Location">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4 footer-top">
+        <div class="col-lg-4">
+          <div class="footer-brand">
+            <span class="brand-icon">🍦</span>
+            <span class="brand-text">Srav's</span>
+          </div>
+          <p class="footer-tagline">Serving Happiness in Every Scoop since 2009. Come for the ice cream, stay for the joy.</p>
+          <div class="social-icons">
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2 offset-lg-1">
+          <h6>Explore</h6>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6>Flavors</h6>
+          <ul class="footer-links">
+            <li><a href="#menu">Vanilla Delight</a></li>
+            <li><a href="#menu">Chocolate Heaven</a></li>
+            <li><a href="#menu">Mango Magic</a></li>
+            <li><a href="#menu">Oreo Blast</a></li>
+            <li><a href="#menu">All Flavors →</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <h6>Opening Hours</h6>
+          <ul class="footer-links hours-list">
+            <li><span>Monday – Friday</span><span>11am – 10pm</span></li>
+            <li><span>Saturday</span><span>10am – 11pm</span></li>
+            <li><span>Sunday</span><span>10am – 10:30pm</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Srav's Ice Cream Parlour. Made with 🍦 and lots of love.</p>
+        <p><a href="#">Privacy Policy</a> · <a href="#">Terms of Service</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== BACK TO TOP ===== -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="bi bi-arrow-up-short"></i>
+  </button>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
